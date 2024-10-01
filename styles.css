@@ -1,0 +1,378 @@
+:root{
+    
+   
+    --light-color:#666;
+    --light-bg:#eee;
+  
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo {
+    animation: bounce2 3s ease infinite;
+  }
+  @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-20px);}
+      60% {transform: translateY(-15px);}
+  }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    margin-right: 1rem;
+   
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.banner {
+    background-image: url('jobportal_banner.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner-content {
+    z-index: 0;
+}
+
+.banner-content span{
+    color: #34c756;
+    font-weight: bold;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.banner .red{
+    color: rgb(230, 140, 158);
+}
+
+.banner-button {
+    background-color: #dc4941;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.banner-button:hover {
+    background-color: #ff8c00;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+
+.about{
+    background-color: var(--light-bg);
+}
+
+.about .row{
+    min-height: 50vh;
+  
+}
+
+.about .content span{
+    font-size: 2rem;
+    color:  #dc4941;
+}
+
+.about .content h3{
+    margin-top:1rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.about .content p{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+.values ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+.job-alerts {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.job-alerts h2 {
+    margin-bottom: 20px;
+    color: #dc4941;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.job-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    flex: 1 1 auto;
+    transition: transform 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+}
+
+.job-card h3 {
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.apply-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #dc4941;
+    text-decoration: none;
+}
+.form{
+    background-image: url('pic.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+}
+.form-container {
+margin-left: 2rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    color: #dc4941;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    text-align: center;
+    margin-top: 15px;
+    color: green;
+}
+
+.team {
+    margin-top: 40px;
+    background-color: var(--light-bg);
+}
+.team h2 {
+    margin-left: 5rem;
+    color: #dc4941;
+    text-decoration: underline;
+}
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    width: 200px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.contact {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        background-color: #007BFF;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex; 
+    }
+}
+@media (max-width: 768px) {
+    .job-card {
+        flex: 0 1 calc(100% - 30px); 
+    }
+}
